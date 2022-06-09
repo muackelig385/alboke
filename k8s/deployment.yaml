@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: lino
+  name: keco
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: lino
+      app: keco
   template:
     metadata:
       labels:
-        app: lino
+        app: keco
     spec:
       containers:
-      - image: okteto.dev/lino:latest
-        name: lino
+      - image: okteto.dev/keco:latest
+        name: keco
         ports:
         - containerPort: 8080
         env:
