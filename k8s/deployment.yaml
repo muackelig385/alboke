@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: eughtf
+  name: wumi
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: eughtf
+      app: wumi
   template:
     metadata:
       labels:
-        app: eughtf
+        app: wumi
     spec:
       containers:
-      - image: okteto.dev/eughtf:latest
-        name: eughtf
+      - image: okteto.dev/wumi:latest
+        name: wumi
         ports:
         - containerPort: 8080
         env:
