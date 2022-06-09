@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: lesson
+  name: eughtf
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: lesson
+      app: eughtf
   template:
     metadata:
       labels:
-        app: lesson
+        app: eughtf
     spec:
       containers:
-      - image: okteto.dev/lesson:latest
-        name: lesson
+      - image: okteto.dev/eughtf:latest
+        name: eughtf
         ports:
         - containerPort: 8080
         env:
