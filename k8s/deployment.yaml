@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: keco
+  name: demel
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: keco
+      app: demel
   template:
     metadata:
       labels:
-        app: keco
+        app: demel
     spec:
       containers:
-      - image: okteto.dev/keco:latest
-        name: keco
+      - image: okteto.dev/demel:latest
+        name: demel
         ports:
         - containerPort: 8080
         env:
