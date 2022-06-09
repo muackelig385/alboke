@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: lino
+  name: keco
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "lino"
+  - name: "keco"
     port: 8080
   selector:
-    app: lino
+    app: keco
