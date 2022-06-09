@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: dgeuf
+  name: lesson
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: dgeuf
+      app: lesson
   template:
     metadata:
       labels:
-        app: dgeuf
+        app: lesson
     spec:
       containers:
-      - image: okteto.dev/dgeuf:latest
-        name: dgeuf
+      - image: okteto.dev/lesson:latest
+        name: lesson
         ports:
         - containerPort: 8080
         env:
