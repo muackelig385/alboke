@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: wumi
+  name: lino
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: wumi
+      app: lino
   template:
     metadata:
       labels:
-        app: wumi
+        app: lino
     spec:
       containers:
-      - image: okteto.dev/wumi:latest
-        name: wumi
+      - image: okteto.dev/lino:latest
+        name: lino
         ports:
         - containerPort: 8080
         env:
